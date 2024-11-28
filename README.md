@@ -1,6 +1,6 @@
-# SoundBits Admin Panel
+# SoundBits Report Manager
 
-SoundBits Admin Panel is a React-based application designed to manage and review malicious content reports for the **SoundBits** platform. Administrators can view reports, listen to audio files, and take action on complaints, such as removing sounds or ignoring complaints. The app integrates with Firebase for real-time data management and storage.
+SoundBits Report Manager is a React-based application designed to manage and review malicious content reports for the **SoundBits** platform. Administrators can view reports, listen to audio files, and take action on complaints, such as removing sounds or ignoring complaints. The app integrates with Firebase for real-time data management and storage.
 
 ---
 
