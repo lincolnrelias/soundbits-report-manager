@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# SoundBits Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SoundBits Admin Panel is a React-based application designed to manage and review malicious content reports for the **SoundBits** platform. Administrators can view reports, listen to audio files, and take action on complaints, such as removing sounds or ignoring complaints. The app integrates with Firebase for real-time data management and storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **View Reports:** Display a list of user-submitted malicious content reports.
+- **Audio Playback:** Listen to audio files associated with reports using a custom sound player.
+- **Manage Reports:** Remove flagged content or mark complaints as ignored.
+- **Dynamic Comments:** Add comments for each report decision.
+- **Real-Time Data:** Powered by Firebase for up-to-date content.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Frontend framework.
+- **Firebase**: Backend for real-time database and storage.
+- **Tailwind CSS**: Styling and responsive design.
+- **TypeScript**: Strongly typed JavaScript for better maintainability.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Prerequisites
+
+- Node.js (>= 14.x)
+- npm (>= 6.x) or Yarn
+- Firebase project set up with Firestore and Storage.
+
+### Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/soundbits-admin.git
+   cd soundbits-admin
+   ```
